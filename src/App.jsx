@@ -326,13 +326,13 @@ export default function App() {
   });
 
   if (!loaded) return (
-    <div style={{ background: BG, color: TEXT, fontFamily: "'Segoe UI', system-ui, sans-serif", maxWidth: 480, margin: "0 auto", position: "fixed", top: 0, left: 0, right: 0, bottom: 0, overflowY: "auto", overscrollBehavior: "none" }}>
+    <div style={{ background: BG, color: TEXT, fontFamily: "'Segoe UI', system-ui, sans-serif", maxWidth: 480, margin: "0 auto", position: "fixed", top: 0, left: 0, right: 0, bottom: 0, overflowY: "auto", overscrollBehavior: "none", paddingTop: "env(safe-area-inset-top)", paddingBottom: "env(safe-area-inset-bottom)" }}>
       <div style={{ color: ACCENT2, fontSize: 16 }}>Loading...</div>
     </div>
   );
 
   return (
-    <div style={{ background: BG, color: TEXT, fontFamily: "'Segoe UI', system-ui, sans-serif", maxWidth: 480, margin: "0 auto", position: "fixed", top: 0, left: 0, right: 0, bottom: 0, overflowY: "auto", overscrollBehavior: "none" }}>
+    <div style={{ background: BG, color: TEXT, fontFamily: "'Segoe UI', system-ui, sans-serif", maxWidth: 480, margin: "0 auto", position: "fixed", top: 0, left: 0, right: 0, bottom: 0, overflowY: "auto", overscrollBehavior: "none", paddingTop: "env(safe-area-inset-top)", paddingBottom: "env(safe-area-inset-bottom)" }}>
 
       {notification && (
         <div style={{
