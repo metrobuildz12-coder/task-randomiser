@@ -326,13 +326,13 @@ export default function App() {
   });
 
   if (!loaded) return (
-    <div style={{ minHeight: "100vh", background: BG, display: "flex", alignItems: "center", justifyContent: "center" }}>
+    <div style={{ background: BG, color: TEXT, fontFamily: "'Segoe UI', system-ui, sans-serif", maxWidth: 480, margin: "0 auto", position: "fixed", top: 0, left: 0, right: 0, bottom: 0, overflowY: "auto", overscrollBehavior: "none" }}>
       <div style={{ color: ACCENT2, fontSize: 16 }}>Loading...</div>
     </div>
   );
 
   return (
-    <div style={{ minHeight: "100vh", background: BG, color: TEXT, fontFamily: "'Segoe UI', system-ui, sans-serif", maxWidth: 480, margin: "0 auto", position: "relative" }}>
+    <div style={{ background: BG, color: TEXT, fontFamily: "'Segoe UI', system-ui, sans-serif", maxWidth: 480, margin: "0 auto", position: "fixed", top: 0, left: 0, right: 0, bottom: 0, overflowY: "auto", overscrollBehavior: "none" }}>
 
       {notification && (
         <div style={{
@@ -403,6 +403,7 @@ export default function App() {
                 cursor: rolledToday ? "default" : "pointer",
                 boxShadow: rolledToday ? "none" : `0 4px 24px ${ACCENT}55`,
                 transition: "all 0.3s ease", marginBottom: 20, letterSpacing: "0.02em"
+
               }}
             >
               {rolledToday ? "✓ Tasks Set for Today" : "🎲 Roll Today's Tasks"}
