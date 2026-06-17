@@ -521,7 +521,6 @@ export default function App() {
                         }}>
                           P{task.priority}
                         </div>
-                        {cat !== "mandatory" && (
                           <button
                             onClick={() => removeTask(cat, i)}
                             style={{
@@ -529,7 +528,6 @@ export default function App() {
                               fontSize: 18, cursor: "pointer", padding: "0 4px", lineHeight: 1
                             }}
                           >×</button>
-                        )}
                       </div>
                     ))}
                   </div>
